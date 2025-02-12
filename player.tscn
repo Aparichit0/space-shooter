@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvol54t2ovaid"]
+
+[ext_resource type="Texture2D" uid="uid://bam0joiggeney" path="res://assets/pixel_ship_yellow.png" id="1_mfesr"]
+[ext_resource type="Script" path="res://sprite_2d.gd" id="2_mjsow"]
+
+[node name="player" type="Node2D"]
+scale = Vector2(1.25208, 1.06546)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.45, 0.553)
+texture = ExtResource("1_mfesr")
+script = ExtResource("2_mjsow")

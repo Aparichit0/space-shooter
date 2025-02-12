@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://hmy5f0es3c6l"]
+
+[ext_resource type="PackedScene" uid="uid://dsfss5atv6gp3" path="res://background.tscn" id="1_eng4s"]
+[ext_resource type="PackedScene" uid="uid://dvol54t2ovaid" path="res://player.tscn" id="2_kxogq"]
+[ext_resource type="PackedScene" uid="uid://bnkcs37ekq3hv" path="res://homeBaseBoundry.tscn" id="3_bxftl"]
+
+[node name="gameManager" type="Node2D"]
+
+[node name="background" parent="." instance=ExtResource("1_eng4s")]
+position = Vector2(225, 400)
+
+[node name="player" parent="." instance=ExtResource("2_kxogq")]
+position = Vector2(225, 735)
+scale = Vector2(1, 1)
+
+[node name="homeBaseBoundry" parent="." instance=ExtResource("3_bxftl")]
+position = Vector2(225, 650)

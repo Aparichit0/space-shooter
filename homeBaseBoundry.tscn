@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnkcs37ekq3hv"]
+
+[ext_resource type="Texture2D" uid="uid://ca3jo5b3i2tme" path="res://assets/horizontal_bar_blue.png" id="1_umjjk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dc610"]
+size = Vector2(450, 4)
+
+[node name="homeBaseBoundry" type="Area2D"]
+
+[node name="boundryCollisionArea" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_dc610")
+
+[node name="boundryLine" type="Sprite2D" parent="boundryCollisionArea"]
+position = Vector2(2.00868e-05, 0)
+scale = Vector2(3.46154, 0.399999)
+texture = ExtResource("1_umjjk")
